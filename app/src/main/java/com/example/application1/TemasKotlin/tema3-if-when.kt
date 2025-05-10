@@ -17,4 +17,12 @@ fun main(){
     val sueldo = readln().toDouble()
     if (sueldo > 3000)
         println("Debe pagar mas impuestos")
+
+    /// WHEN
+    val obj ="HELLO"
+    when (obj) {
+        "1" -> println("Uno")
+        "HELLO" -> println("Dos")
+        else -> println("No hay coincidencia")
+    }
 }
