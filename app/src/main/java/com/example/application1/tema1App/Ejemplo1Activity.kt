@@ -26,7 +26,6 @@ class Ejemplo1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_ejemplo1)
-        // Initialize views by assigning to class properties
         et1 = findViewById(R.id.et1)
         et2 = findViewById(R.id.et2)
         tv1 = findViewById(R.id.tv1)

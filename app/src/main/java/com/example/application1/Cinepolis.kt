@@ -71,24 +71,25 @@ class Cinepolis : AppCompatActivity() {
             mostrarResultado(nombre, boletos, total)
 
         } catch (e: NumberFormatException) {
-            mostrarError("Ingrese valores numéricos válidos")
+            mostrarError("Ingrese valores numericos validos")
         }
     }
 
     private fun calcularTotalConDescuentos(boletos: Int): Double {
         val precioUnitario = 12.00
         var total = boletos * precioUnitario
-
-        total = when {
-            boletos > 5 -> total * 0.85
-            boletos in 3..5 -> total * 0.90
-            else -> total
+        var descuento = 0.0
+        descuento += when {
+            boletos > 5 -> 0.15
+            boletos in 3..5 -> 0.10
+            else -> 0.0
         }
-
         if (rbtSi.isChecked) {
-            total *= 0.90
+            descuento += 0.10
         }
-
+        if (descuento > 0) {
+            total *= (1 - descuento)
+        }
         return total
     }
 
