@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5161628"
+    tools:context=".diccionario.DiccionarioActivity">
+
+    <Button
+        android:id="@+id/goToCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttondicc"
+        android:paddingHorizontal="15px"
+        android:paddingVertical="30px"
+        android:text="Capturar Palabras"
+        android:textColor="#FFFFFF"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/goToSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttondicc"
+        android:paddingHorizontal="15px"
+        android:paddingVertical="30px"
+        android:text="Buscar Palabra"
+        android:textColor="#FFFFFF"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="@+id/goToCapture"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/goToCapture"
+        app:layout_constraintTop_toBottomOf="@+id/goToCapture" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Diccionario Ingles-Español"
+        android:textColor="@color/white"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
