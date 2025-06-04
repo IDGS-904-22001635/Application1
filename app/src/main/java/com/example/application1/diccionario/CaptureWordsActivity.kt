@@ -17,10 +17,8 @@ class CaptureWordsActivity : AppCompatActivity() {
     private lateinit var etEspanol: EditText
     private lateinit var btnGuardar: Button
     private lateinit var btnRegresar: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         enableEdgeToEdge()
         setContentView(R.layout.activity_capture_words)
         etIngles = findViewById(R.id.etIngles)
@@ -58,7 +56,6 @@ class CaptureWordsActivity : AppCompatActivity() {
                         osw.write("$ingles:$espanol\n")
                     }
                 }
-
                 AlertDialog.Builder(this)
                     .setTitle("Éxito")
                     .setMessage("Palabras guardadas correctamente")

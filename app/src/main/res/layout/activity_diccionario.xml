@@ -22,7 +22,6 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <Button
         android:id="@+id/goToSearch"
         android:layout_width="wrap_content"
@@ -38,7 +37,6 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/goToCapture"
         app:layout_constraintTop_toBottomOf="@+id/goToCapture" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
